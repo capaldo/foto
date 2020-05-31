@@ -1,17 +1,38 @@
+SHELL = /bin/bash
+
 prefix ?= /usr/local
-bindir = $(prefix)/bin
+bindir ?= $(prefix)/bin
+libdir ?= $(prefix)/lib
+srcdir = Sources
 
-build:
-	swift build -c release --disable-sandbox
+REPODIR = $(shell pwd)
+BUILDDIR = $(REPODIR)/.build
+SOURCES = $(wildcard $(srcdir)/**/*.swift)
 
-install: build
-	install ".build/release/foto" "$(bindir)"
-	install_name_tool -change "$(bindir)/foto"
+.DEFAULT_GOAL = all
 
+.PHONY: all
+all: foto
+
+swift-highlight: $(SOURCES)
+	@swift build \
+		-c release \
+		--disable-sandbox \
+		--build-path "$(BUILDDIR)"
+
+.PHONY: install
+install: foto
+	@install -d "$(bindir)"
+	@install "$(BUILDDIR)/release/foto" "$(bindir)"
+
+.PHONY: uninstall
 uninstall:
-	rm -rf "$(bindir)/foto"
+	@rm -rf "$(bindir)/foto"
 
-clean:
-	rm -rf .build
+.PHONY: clean
+distclean:
+	@rm -f $(BUILDDIR)/release
 
-.PHONY: build install uninstall clean
+.PHONY: clean
+clean: distclean
+	@rm -rf $(BUILDDIR)
