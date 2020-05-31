@@ -3,7 +3,7 @@ import ArgumentParser
 
 struct Foto: ParsableCommand {
     static let configuration: CommandConfiguration = .init(
-        abstract: "A utility to copy and paste images from the commandline",
+        abstract: "A utility to copy and paste images from the command-line",
         version: "0.1.2",
         subcommands: [Copy.self, Paste.self]
     )
