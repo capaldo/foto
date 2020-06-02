@@ -17,3 +17,5 @@ Using homebrew:
 ```bash
 brew install foto
 ```
+
+
