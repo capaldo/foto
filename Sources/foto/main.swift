@@ -4,7 +4,7 @@ import ArgumentParser
 struct Foto: ParsableCommand {
     static let configuration: CommandConfiguration = .init(
         abstract: "A utility to copy and paste images from the command-line",
-        version: "0.1.2",
+        version: "0.2",
         subcommands: [Copy.self, Paste.self]
     )
 }
@@ -47,13 +47,11 @@ extension Foto {
             guard !fileExistance else {
                 throw ValidationError("Image already exists at the specified path")
             }
-
         }
         
         func run() {
             pasteImage(path)
         }
-        
     }
 }
 
