@@ -15,6 +15,7 @@ Although `png` is used in the example, its been tested with other formats includ
 
 ## Installation
 Using homebrew:
+
 ```bash
 brew install foto
 ```
