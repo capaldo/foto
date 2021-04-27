@@ -8,7 +8,7 @@ let package = Package(name: "foto",
                         .executable(name: "foto", targets: ["foto"])
                         ],
                       dependencies: [
-                        .package(url: "https://github.com/apple/swift-argument-parser", .branch("main")),
+                        .package(url: "https://github.com/apple/swift-argument-parser", .branch("main"))
                       ],
                       targets: [
                         .executableTarget(name: "foto", dependencies: [.product(name: "ArgumentParser", package: "swift-argument-parser")]),
