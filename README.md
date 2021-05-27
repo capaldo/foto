@@ -1,6 +1,6 @@
 # foto
 
-A command-line tool to copy and paste images from a variety of formats to and from the system clipboard.
+A command-line tool to copy and paste images in a variety of formats to and from the system clipboard.
 
 ## Usage
 To copy an image to the clipboard:
@@ -12,7 +12,7 @@ To paste an image from the clipboard:
 foto paste ~/New/File/Path/Image.png
 ```
 
-Although `png` is used in the example, its been tested with every other image format and is working without any problems.
+Although `png` is used in the example, its been tested with other common image formats without issue.
 
 ## Installation
 Using homebrew:
