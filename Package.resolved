@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ShellOut",
+        "repositoryURL": "https://github.com/JohnSundell/ShellOut",
+        "state": {
+          "branch": "master",
+          "revision": "d3db50b62a86b18f88f5de38cae5f3d80617d555",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": "main",
+          "revision": "ee32b809403dc77bded883194e3bbcb107be5104",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
