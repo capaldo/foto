@@ -1,6 +1,7 @@
 import Foundation
 import ArgumentParser
 
+
 struct Foto: ParsableCommand {
     static let configuration: CommandConfiguration = .init(
         abstract: "A utility to copy, paste, convert, and resize images from the command-line",

@@ -14,8 +14,6 @@ let package = Package(name: "foto",
                         .executableTarget(name: "foto", dependencies: [
                             .product(name: "ArgumentParser", package: "swift-argument-parser"),
                             .product(name: "ShellOut", package: "ShellOut")
-                        ]
-                        ),
+                        ]),
                         .testTarget(name: "fotoTests", dependencies: ["foto"]),
-                      ]
-)
+                      ])
