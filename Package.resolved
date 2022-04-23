@@ -5,18 +5,18 @@
         "package": "ShellOut",
         "repositoryURL": "https://github.com/JohnSundell/ShellOut",
         "state": {
-          "branch": "master",
-          "revision": "d3db50b62a86b18f88f5de38cae5f3d80617d555",
-          "version": null
+          "branch": null,
+          "revision": "e1577acf2b6e90086d01a6d5e2b8efdaae033568",
+          "version": "2.3.0"
         }
       },
       {
         "package": "swift-argument-parser",
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
-          "branch": "main",
-          "revision": "ee32b809403dc77bded883194e3bbcb107be5104",
-          "version": null
+          "branch": null,
+          "revision": "f3c9084a71ef4376f2fabbdf1d3d90a49f1fabdb",
+          "version": "1.1.2"
         }
       }
     ]

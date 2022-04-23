@@ -7,8 +7,8 @@ let package = Package(name: "foto",
                         .executable(name: "foto", targets: ["foto"])
                       ],
                       dependencies: [
-                        .package(url: "https://github.com/apple/swift-argument-parser", .branch("main")),
-                        .package(url: "https://github.com/JohnSundell/ShellOut", .branch("master"))
+                        .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "1.1.0")),
+                        .package(url: "https://github.com/JohnSundell/ShellOut", .upToNextMinor(from: "2.3.0"))
                       ],
                       targets: [
                         .executableTarget(name: "foto", dependencies: [
