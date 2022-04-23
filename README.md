@@ -15,8 +15,7 @@ foto paste ~/New/File/Path/Image.png
 Although `png` is used in the example, its been tested with other common image formats without issue.
 
 ### Installation
+Using homebrew:
 ```bash
-git clone https://github.com/capaldo/foto
-cd ./foto
-sudo make install
+brew install capaldo/tap/foto
 ```
